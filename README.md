@@ -8,7 +8,8 @@ Firstly, I assigned all the values to the tiles using the input and removed thes
 2.	If there exists two cells in a particular unit two cells have same pair of values in their domain, then those values are removed from the domain of all the other cells in that unit.
 3.	If any cell has single value in its domain, then that cell is assigned the value and it is removed from domains of all the other cells in its unit(row, column or grid).
 
-After problem cannot be further reduced by these constraints, I have applied backtracking using different heuristics. They are given below:
+After problem cannot be further reduced by these constraints, I have applied backtracking using different heuristics. 
+They are given below:
 •	cell_heuristic_MCV()- This is a heuristic function that selects the best cell i.e. the one with the smallest domain to assign value.
 •	value_heuristic_LCV()- This is a heuristic function that selects the best value(least constrained value, that leaves maximum flexibility for other cells) from the domain of the cell returned by the above method to be assigned to it.
 
